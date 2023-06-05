@@ -1,0 +1,90 @@
+import React from 'react'
+import CardItem from './CardItem'
+import './Cards.css'
+import { Button } from './Button';
+
+function Cards() {
+    const scrollToSection = (destination) => {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    let scrollSection;
+
+    if (destination === '#topOfPage') {
+      scrollSection = document.getElementById('topOfPage');
+    } else if (destination === '#AboutSection') {
+      scrollSection = document.getElementById('AboutSection');
+    }
+
+    const scrollToPosition = scrollSection.offsetTop - navbarHeight;
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <div className='cards' id="ProjectSection">
+      <h1>Check out some of my Bootcamp Projects!</h1>
+      <div className="cards__container">
+        <div className="cards__wrapper">
+          <ul className="cards__items">
+            <CardItem 
+            src="images/ONTRACK-Large.jpg"
+            text="Project 2: ONTRACK - Promoting a healthy lifestyle through data visualization.  Users can register to gain access and enter health and wellness data daily to view trends or progress towards a goal."
+            label="ONTRACK"
+            path="https://on-track.herokuapp.com/homepage"
+            />
+            <CardItem 
+            src="images/SpaceProjectLarge.png"
+            text="Project 1: Spaceship Mission Tracker - Browse upcoming Space Launces by Launch Location, crew status, or Launch Service Provider.  Also find additional space related information via NASA and Moon Phase API's."
+            label="Launch API"
+            path="https://masterchef842.github.io/Spaceship-Mission-Tracker/"
+            />
+          </ul>
+          <ul className="cards__items">
+            <CardItem 
+            src="images/placeholder-4.jpg"
+            text="Placeholder for future projects"
+            label="Project 3"
+            path="/projects"
+            />
+            <CardItem 
+            src="images/placeholder-5.jpg"
+            text="Placeholder for future projects"
+            label="Project 4"
+            path="/projects"
+            />
+            <CardItem 
+            src="images/placeholder-3-2.jpg"
+            text="Placeholder for future projects"
+            label="Project 5"
+            path="/sign-up"
+            />            
+          </ul>
+        </div>
+          <div className="back-to-top" style={{ margin: '0 auto' }}>
+            <Button
+              className='btns'
+              buttonStyle='btn--outline--dark'
+              buttonSize='btn--large--dark'
+              onClick={() => scrollToSection('#AboutSection')}
+              destination='#AboutSection'
+            >
+              About Me
+            </Button>&nbsp;&nbsp;&nbsp;
+            <Button
+              className='btns'
+              buttonStyle='btn--outline--dark'
+              buttonSize='btn--large--dark'
+              onClick={() => scrollToSection('#topOfPage')}
+              destination='#topOfPage'
+            >
+              Back To Top
+            </Button>       
+            <br /><br />
+          </div>       
+      </div>
+    </div>
+  )
+}
+
+export default Cards

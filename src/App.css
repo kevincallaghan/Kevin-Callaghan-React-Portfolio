@@ -34,14 +34,14 @@
   font-size: 100px;
 }
 
-.sign-up {
+/* .sign-up {
   background-image: url('../public/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 .project-container {
   display: flex;

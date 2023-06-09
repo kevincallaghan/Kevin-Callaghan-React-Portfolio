@@ -42,8 +42,8 @@ function About() {
       <div className="back-to-top" style={{ margin: '0 auto' }}>
         <Button
           className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonStyle='btn--outline--dark'
+          buttonSize='btn--large--dark'
           onClick={() => scrollToSection('#ProjectSection')}
           destination='#ProjectSection'
         >
@@ -51,8 +51,8 @@ function About() {
         </Button>&nbsp;&nbsp;&nbsp;
         <Button
           className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonStyle='btn--outline--dark'
+          buttonSize='btn--large--dark'
           onClick={() => scrollToSection('#topOfPage')}
           destination='#topOfPage'
         >

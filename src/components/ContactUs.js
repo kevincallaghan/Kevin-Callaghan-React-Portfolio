@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactUs.css';
+import { Button } from './Button';
 
 function ContactUs() {
   const form = useRef();
@@ -21,9 +22,25 @@ function ContactUs() {
       });
   };
 
+    const scrollToSection = (destination) => {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    let scrollSection;
+
+    if (destination === '#topOfPage') {
+      scrollSection = document.getElementById('topOfPage');
+    }
+
+    const scrollToPosition = scrollSection.offsetTop - navbarHeight;
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="form-container">
       <div className="form-wrapper" id="ContactSection">
+        <div className="form-content-wrapper">
         <h1>Contact Kevin:</h1>
         {showThanks ? (
           <div className="success-message"><h2>Thank you for your message!</h2></div>
@@ -31,19 +48,31 @@ function ContactUs() {
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-field">
               <label className="form-label">Name</label>
-              <input type="text" name="user_name" className="form-input" />
+              <input type="text" name="user_name" placeholder="Please Enter Your Name" className="form-input" />
             </div>
             <div className="form-field">
               <label className="form-label">Email</label>
-              <input type="email" name="user_email" className="form-input" />
+              <input type="email" name="user_email" placeholder="Please Enter Your Email Address" className="form-input" />
             </div>
             <div className="form-field">
               <label className="form-label">Message</label>
-              <textarea name="message" className="form-textarea" />
+              <textarea name="message" placeholder="Please Enter Your Message" className="form-textarea" />
             </div>
-            <input type="submit" value="Send" className="form-submit" />
+            <div className="button-wrapper">
+            <input type="submit" value="Send Email" className="form-submit btn-outline-dark btn-large-dark" />
+            <Button
+              className='btns'
+              buttonStyle='btn--outline--dark'
+              buttonSize='btn--large--dark'
+              onClick={() => scrollToSection('#topOfPage')}
+              destination='#topOfPage'
+            >
+              Back To Top
+            </Button> 
+            </div>
           </form>
         )}
+        </div>
       </div>
     </div>
   );

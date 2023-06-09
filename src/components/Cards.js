@@ -10,8 +10,8 @@ function Cards() {
 
     if (destination === '#topOfPage') {
       scrollSection = document.getElementById('topOfPage');
-    } else if (destination === '#AboutSection') {
-      scrollSection = document.getElementById('AboutSection');
+    } else if (destination === '#ContactSection') {
+      scrollSection = document.getElementById('ContactSection');
     }
 
     const scrollToPosition = scrollSection.offsetTop - navbarHeight;
@@ -66,10 +66,10 @@ function Cards() {
               className='btns'
               buttonStyle='btn--outline--dark'
               buttonSize='btn--large--dark'
-              onClick={() => scrollToSection('#AboutSection')}
-              destination='#AboutSection'
+              onClick={() => scrollToSection('#ContactSection')}
+              destination='#ContactSection'
             >
-              About Me
+              Contact Me
             </Button>&nbsp;&nbsp;&nbsp;
             <Button
               className='btns'

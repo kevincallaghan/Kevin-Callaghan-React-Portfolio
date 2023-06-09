@@ -25,7 +25,7 @@ function HeroSection() {
   return (
     <>
     <div className='hero-container' id="topOfPage">
-      <video src='/videos/greenVideo.mp4' autoPlay loop muted />
+      <video src={process.env.PUBLIC_URL + '/videos/greenVideo.mp4'} autoPlay loop muted />
         <h1>KEVIN CALLAGHAN</h1>
         <p>WebDev in Training</p>
         <div className="hero-btns">

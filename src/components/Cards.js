@@ -23,38 +23,38 @@ function Cards() {
 
   return (
     <div className='cards' id="ProjectSection">
+      <div className="cards-container">
       <h1>Check out some of my Bootcamp Projects!</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+        <div className="cards-wrapper">
+          <ul className="cards-items">
             <CardItem 
-            src="images/ONTRACK-Large.jpg"
+            src={process.env.PUBLIC_URL + '/images/ONTRACK-Large.jpg'}
             text="Project 2: ONTRACK - Promoting a healthy lifestyle through data visualization.  Users can register to gain access and enter health and wellness data daily to view trends or progress towards a goal."
             label="ONTRACK"
             path="https://on-track.herokuapp.com/homepage"
             />
             <CardItem 
-            src="images/SpaceProjectLarge.png"
+            src={process.env.PUBLIC_URL + '/images/SpaceProjectLarge.png'}
             text="Project 1: Spaceship Mission Tracker - Browse upcoming Space Launces by Launch Location, crew status, or Launch Service Provider.  Also find additional space related information via NASA and Moon Phase API's."
             label="Launch API"
             path="https://masterchef842.github.io/Spaceship-Mission-Tracker/"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="cards-items">
             <CardItem 
-            src="images/placeholder-4.jpg"
+            src={process.env.PUBLIC_URL + '/images/placeholder-4.jpg'}
             text="Placeholder for future projects"
             label="Project 3"
             path="/projects"
             />
             <CardItem 
-            src="images/placeholder-5.jpg"
+            src={process.env.PUBLIC_URL + '/images/placeholder-5.jpg'}
             text="Placeholder for future projects"
             label="Project 4"
             path="/projects"
             />
             <CardItem 
-            src="images/placeholder-3-2.jpg"
+            src={process.env.PUBLIC_URL + '/images/placeholder-3-2.jpg'}
             text="Placeholder for future projects"
             label="Project 5"
             path="/sign-up"

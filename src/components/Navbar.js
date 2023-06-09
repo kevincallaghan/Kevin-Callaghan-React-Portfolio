@@ -37,6 +37,16 @@ function Navbar() {
                 Projects
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                Contact Me
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                Resume
+              </Link>
+            </li>                   
           </ul>
 
         </div>

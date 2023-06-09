@@ -45,7 +45,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 5. The article 'Element: scrollTo() method' from developer.mozilla.org was used to figure out how to use the offset properties to navigate up and down our page.  Here is a link to the article: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo 
 
-6. 
+6. I used this video from PedroTech's YouTube Page called "How To Deploy A React App To Github Pages (Simple)" to figure out how to deploy to github pages: https://www.youtube.com/watch?v=Q9n2mLqXFpU 
+
+7. I used this article on create-react-app.dev to solve my problem with broken image links after running the build and deploying to github pages: https://create-react-app.dev/docs/using-the-public-folder/ 
+
+8. Email JS functionality is from the EmailJS Docs: https://www.emailjs.com/docs/examples/reactjs/ 
 
 
 ## License

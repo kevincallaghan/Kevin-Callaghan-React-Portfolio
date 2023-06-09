@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: rgba(26, 23, 23, 1);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -29,14 +29,14 @@
   align-items: center;
 }
 
-.fa-typo3 {
+/* .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;
-}
+} */
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -47,7 +47,7 @@
 
 .nav-item {
   height: 80px;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .nav-links {

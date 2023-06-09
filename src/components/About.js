@@ -27,7 +27,7 @@ function About() {
       <div className="about-container">
         <div className="about-wrapper">
         <div className="about-header-container">
-          <img src='/images/Kevin.jpg' className='kevinPic'></img>
+          <img src={process.env.PUBLIC_URL + '/images/Kevin.jpg'} alt='Kevin Callaghan Bio' className='kevinPic'></img>
           <h1 className='aboutMe'>GET TO KNOW ME</h1>
         </div>
       <div className='about-text-wrapper'>

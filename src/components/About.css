@@ -1,7 +1,8 @@
 .about-container {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  padding:4rem;
 }
 
 /* .test {
@@ -47,3 +48,23 @@ h1 {
     padding: 1rem;
     width: 100%;
   }
+/* 
+    @media screen and (max-width: 960px) {
+    
+      h1 {
+        font-size: 3rem;
+      }
+
+      .about-container {
+        height: 120vh;
+      }
+    
+    }
+
+    @media screen and (max-width: 700px) {
+
+      .about-container {
+        height: 155vh;
+      }
+    
+    } */

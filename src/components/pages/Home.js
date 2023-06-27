@@ -5,6 +5,7 @@ import Cards from '../Cards';
 import Footer from '../Footer';
 import About from '../About';
 import ContactUs from '../ContactUs';
+import Resume from '../Resume';
 
 function Home () {
   return (
@@ -13,6 +14,7 @@ function Home () {
       <About />
       <Cards />
       <ContactUs />
+      <Resume />
       <Footer />
     </>
   );

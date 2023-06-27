@@ -9,6 +9,31 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const scrollToSection = (destination) => {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    let scrollSection;
+
+    if (destination === '#AboutSection') {
+      scrollSection = document.getElementById('AboutSection');
+    } else if (destination === '#ProjectSection') {
+      scrollSection = document.getElementById('ProjectSection');
+    } else if (destination === '#ContactSection') {
+      scrollSection = document.getElementById('ContactSection');
+    } else if (destination === '#ResumeSection') {
+      scrollSection = document.getElementById('ResumeSection');
+    } else if (destination === '#TopOfPage') {
+      scrollSection = document.getElementById('TopOfPage');
+    }
+
+    const scrollToPosition = scrollSection.offsetTop - navbarHeight;
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth',
+    });
+  };
+  
+
+
 
   return (
     <>
@@ -22,18 +47,18 @@ function Navbar() {
           </div>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
-              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='#AboutSection' className='nav-links' onClick={closeMobileMenu}>
                 About Me
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='#ProjectSection' className='nav-links' onClick={closeMobileMenu}>
                 Projects
               </Link>
             </li>

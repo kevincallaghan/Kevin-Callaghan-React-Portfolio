@@ -20,11 +20,19 @@
     padding:20px;
   }
 
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .button-wrapper {
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap:10px;
   }
 

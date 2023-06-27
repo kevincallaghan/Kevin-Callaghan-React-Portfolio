@@ -8,49 +8,16 @@ function Footer() {
 
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to='/' className='social-logo kevin'>
-              KEVIN C.
-            </Link>
-          </div>
           <div className="social-icons">
-            <Link className='social-icon-link facebook'
-            to='/'
-            target='_blank'
-            aria-label='facebook'
-            >
-              <i className='fab fa-facebook-f'></i>
-            </Link>
-            <Link className='social-icon-link instagram'
-            to='/'
-            target='_blank'
-            aria-label='instagram'
-            >
-              <i className='fab fa-instagram'></i>
-            </Link>
-            <Link className='social-icon-link youtube'
-            to='/'
-            target='_blank'
-            aria-label='youtube'
-            >
-              <i className='fab fa-youtube'></i>
-            </Link>
-            <Link className='social-icon-link twitter'
-            to='/'
-            target='_blank'
-            aria-label='twitter'
-            >
-              <i className='fab fa-twitter'></i>
-            </Link>
             <Link className='social-icon-link linkedin'
-            to='/'
+            to='https://www.linkedin.com/in/kevincallaghan22/'
             target='_blank'
             aria-label='LinkedIn'
             >
               <i className='fab fa-linkedin'></i>
             </Link>
             <Link className='social-icon-link github'
-            to='/'
+            to='https://github.com/kevincallaghan'
             target='_blank'
             aria-label='github'
             >

@@ -29,10 +29,15 @@
   align-items: center;
 }
 
-/* .fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
-} */
+.nav-button {
+  background-color: rgba(26, 23, 23, 1);
+  border:none;
+  font-size: 1.25rem;
+}
+
+.nav-button:hover {
+  background-color: rgb(49, 44, 44);
+}
 
 .nav-menu {
   display: grid;

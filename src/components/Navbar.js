@@ -30,6 +30,8 @@ function Navbar() {
       top: scrollToPosition,
       behavior: 'smooth',
     });
+
+    closeMobileMenu();
   };
   
 
@@ -53,24 +55,24 @@ function Navbar() {
               </Link>
             </li> */}
             <li className='nav-item'>
-              <Link to='#AboutSection' className='nav-links' onClick={closeMobileMenu}>
+              <button className='nav-links nav-button' onClick={() => scrollToSection('#AboutSection')}>
                 About Me
-              </Link>
+              </button>
             </li>
             <li className='nav-item'>
-              <Link to='#ProjectSection' className='nav-links' onClick={closeMobileMenu}>
+              <button className='nav-links nav-button' onClick={() => scrollToSection('#ProjectSection')}>
                 Projects
-              </Link>
+              </button>
             </li>
             <li className='nav-item'>
-              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+              <button className='nav-links nav-button' onClick={() => scrollToSection('#ContactSection')}>
                 Contact Me
-              </Link>
+              </button>
             </li>
             <li className='nav-item'>
-              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+              <button className='nav-links nav-button' onClick={() => scrollToSection('#ResumeSection')}>
                 Resume
-              </Link>
+              </button>
             </li>                   
           </ul>
 

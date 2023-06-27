@@ -28,25 +28,25 @@ function Cards() {
         <div className="cards-wrapper">
           <ul className="cards-items">
             <CardItem 
+            src={process.env.PUBLIC_URL + '/images/Taskmaster-large.png'}
+            text="Project 3: Taskmaster - Gamified Task Management Application.  Accomplish real-world tasks to earn rewards and level up your character in a mini-game.  The more tasks you complete, the stronger your warrior can become!"
+            label="Taskmaster"
+            path="https://taskmaster-flex-be1c20d82d58.herokuapp.com/"
+            />
+            <CardItem 
             src={process.env.PUBLIC_URL + '/images/ONTRACK-Large.jpg'}
             text="Project 2: ONTRACK - Promoting a healthy lifestyle through data visualization.  Users can register to gain access and enter health and wellness data daily to view trends or progress towards a goal."
             label="ONTRACK"
             path="https://on-track.herokuapp.com/homepage"
             />
             <CardItem 
-            src={process.env.PUBLIC_URL + '/images/SpaceProjectLarge.png'}
+            src={process.env.PUBLIC_URL + '/images/SpaceProject.png'}
             text="Project 1: Spaceship Mission Tracker - Browse upcoming Space Launces by Launch Location, crew status, or Launch Service Provider.  Also find additional space related information via NASA and Moon Phase API's."
             label="Launch API"
             path="https://masterchef842.github.io/Spaceship-Mission-Tracker/"
             />
           </ul>
           <ul className="cards-items">
-            <CardItem 
-            src={process.env.PUBLIC_URL + '/images/placeholder-4.jpg'}
-            text="Placeholder for future projects"
-            label="Project 3"
-            path="/projects"
-            />
             <CardItem 
             src={process.env.PUBLIC_URL + '/images/placeholder-5.jpg'}
             text="Placeholder for future projects"

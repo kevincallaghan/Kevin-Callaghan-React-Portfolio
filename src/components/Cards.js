@@ -39,14 +39,14 @@ function Cards() {
             label="ONTRACK"
             path="https://on-track.herokuapp.com/homepage"
             />
+          </ul>
+          <ul className="cards-items">
             <CardItem 
             src={process.env.PUBLIC_URL + '/images/SpaceProject.png'}
             text="Project 1: Spaceship Mission Tracker - Browse upcoming Space Launces by Launch Location, crew status, or Launch Service Provider.  Also find additional space related information via NASA and Moon Phase API's."
             label="Launch API"
             path="https://masterchef842.github.io/Spaceship-Mission-Tracker/"
             />
-          </ul>
-          <ul className="cards-items">
             <CardItem 
             src={process.env.PUBLIC_URL + '/images/placeholder-5.jpg'}
             text="Placeholder for future projects"

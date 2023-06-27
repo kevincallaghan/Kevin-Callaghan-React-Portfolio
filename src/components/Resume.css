@@ -1,0 +1,47 @@
+.resume-container {
+  width: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+}
+
+.resume-wrapper {
+  background: rgba(255, 255, 255, .6) !important;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+.about-header-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem 0 1rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.2rem;
+  color: rgba(26, 26, 26, .87) !important;
+}
+
+.resume-content {
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+}
+
+.button-wrapper {
+  padding: 20px;
+}
+
+p {
+  font-size: 1.4rem;
+}

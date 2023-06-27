@@ -28,6 +28,8 @@ function ContactUs() {
 
     if (destination === '#topOfPage') {
       scrollSection = document.getElementById('topOfPage');
+    } else if (destination === '#ResumeSection') {
+      scrollSection = document.getElementById('ResumeSection');
     }
 
     const scrollToPosition = scrollSection.offsetTop - navbarHeight;
@@ -60,6 +62,15 @@ function ContactUs() {
             </div>
             <div className="button-wrapper">
             <input type="submit" value="Send Email" className="form-submit btn-outline-dark btn-large-dark" />
+            <Button
+              className='btns'
+              buttonStyle='btn--outline--dark'
+              buttonSize='btn--large--dark'
+              onClick={() => scrollToSection('#ResumeSection')}
+              destination='#ResumeSection'
+            >
+              My Resume
+            </Button> 
             <Button
               className='btns'
               buttonStyle='btn--outline--dark'

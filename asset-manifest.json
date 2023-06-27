@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Kevin-Callaghan-React-Portfolio/static/css/main.9de6eb0c.css",
-    "main.js": "/Kevin-Callaghan-React-Portfolio/static/js/main.f80fc068.js",
+    "main.css": "/Kevin-Callaghan-React-Portfolio/static/css/main.49b51d27.css",
+    "main.js": "/Kevin-Callaghan-React-Portfolio/static/js/main.f642b428.js",
     "static/media/projects.jpg": "/Kevin-Callaghan-React-Portfolio/static/media/projects.f13faf64977d484479a3.jpg",
+    "static/media/KevinCallaghanResume.pdf": "/Kevin-Callaghan-React-Portfolio/static/media/KevinCallaghanResume.9b51903df5eab476d988.pdf",
     "index.html": "/Kevin-Callaghan-React-Portfolio/index.html",
-    "main.9de6eb0c.css.map": "/Kevin-Callaghan-React-Portfolio/static/css/main.9de6eb0c.css.map",
-    "main.f80fc068.js.map": "/Kevin-Callaghan-React-Portfolio/static/js/main.f80fc068.js.map"
+    "main.49b51d27.css.map": "/Kevin-Callaghan-React-Portfolio/static/css/main.49b51d27.css.map",
+    "main.f642b428.js.map": "/Kevin-Callaghan-React-Portfolio/static/js/main.f642b428.js.map"
   },
   "entrypoints": [
-    "static/css/main.9de6eb0c.css",
-    "static/js/main.f80fc068.js"
+    "static/css/main.49b51d27.css",
+    "static/js/main.f642b428.js"
   ]
 }

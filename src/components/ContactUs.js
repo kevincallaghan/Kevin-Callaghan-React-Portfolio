@@ -60,26 +60,28 @@ function ContactUs() {
               <label className="form-label">Message</label>
               <textarea name="message" placeholder="Please Enter Your Message" className="form-textarea" />
             </div>
-            <div className="button-wrapper">
-            <input type="submit" value="Send Email" className="form-submit btn-outline-dark btn-large-dark" />
-            <Button
-              className='btns'
-              buttonStyle='btn--outline--dark'
-              buttonSize='btn--large--dark'
-              onClick={() => scrollToSection('#ResumeSection')}
-              destination='#ResumeSection'
-            >
-              My Resume
-            </Button> 
-            <Button
-              className='btns'
-              buttonStyle='btn--outline--dark'
-              buttonSize='btn--large--dark'
-              onClick={() => scrollToSection('#topOfPage')}
-              destination='#topOfPage'
-            >
-              Back To Top
-            </Button> 
+            <div className="button-container">
+              <div className="button-wrapper">
+                <input type="submit" value="Send Email" className="form-submit btn-outline-dark btn-large-dark" />
+                <Button
+                  className='btns'
+                  buttonStyle='btn--outline--dark'
+                  buttonSize='btn--large--dark'
+                  onClick={() => scrollToSection('#ResumeSection')}
+                  destination='#ResumeSection'
+                >
+                  My Resume
+                </Button> 
+                <Button
+                  className='btns'
+                  buttonStyle='btn--outline--dark'
+                  buttonSize='btn--large--dark'
+                  onClick={() => scrollToSection('#topOfPage')}
+                  destination='#topOfPage'
+                >
+                  Back To Top
+                </Button> 
+              </div>
             </div>
           </form>
         )}
